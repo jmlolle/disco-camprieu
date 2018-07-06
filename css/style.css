@@ -1,0 +1,156 @@
+
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Candal);
+
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+@import url(https://fonts.googleapis.com/css?family=Monoton);
+
+
+body { background: #000; color: #fff; position: relative;}
+
+.chrome {
+  position: relative;
+  background-image: -webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 4px #f5f5f5;
+  font-size: 80px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
+  margin: 0;
+  line-height: 1;
+}
+
+.chrome:before {
+  content: 'DISCO';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+  background-position: 80px 0;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0;
+  padding-right: 80px;
+  -webkit-animation-name: chrome_effect;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.dreams {
+  position: absolute;
+  margin: 0px;
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 40px;
+  color: #F975F7 ;
+  transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg); /* IE 9 */
+  -webkit-transform:rotate(-15deg); /* Safari and Chrome */
+  margin-left: 40px;
+  margin-top: 20px;
+  -webkit-text-stroke: 1px #f008b7;
+  -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+  z-index: 20;
+}
+
+.windows .dreams {
+  -webkit-text-stroke: 4px #f008b7;
+}
+
+
+@-webkit-keyframes chrome_effect {
+  0% {background-position:-680px 0;}
+  10% {background-position:420px 0;}
+  100% {background-position:420px 0;}
+}
+
+
+h1 { 
+  color: #111; 
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 42px; 
+  font-weight: bold; 
+  letter-spacing: -1px; 
+  line-height: 1; 
+  }
+
+button {
+  width:85px;
+  height:85px;
+  background:#cc0000;
+  font:bold 30px Arial;
+  border-radius:50%;
+  border:none;
+  color:#fff;
+}
+
+#buttonclear {
+  width:85px;
+  height:85px;
+  background:Green;
+  font:bold 30px Arial;
+  border-radius:50%;
+  border:none;
+  color:#fff;
+}
+
+
+button.hover {
+  width:90px;
+  height:90px;
+  background:grey;
+  font:bold 30px Arial;
+  border-radius:50%;
+  border:none;
+  color:grey;
+}
+#buttonchiffre {
+  width:85px;
+  height:85px;
+  background:#fafafa;
+  box-shadow:2px 2px 8px #aaa;
+  font:bold 20px Arial;
+  border-radius:50%;
+  color:#555;
+}
+#buttonegal {
+  width:85px;
+  height:85px;
+  background:#478bf9;
+  box-shadow:2px 2px 8px #aaa;
+  font:bold 30px Arial;
+  border-radius:50%;
+  color:#555;
+}
+
+textarea {
+
+  width: 315px;
+  height:40px;
+  background: linear-gradient(45deg, #10abff, white);
+  padding: 15px;
+  border-radius: 9999em;
+  font:bold 10px Arial;
+}
+
+input {
+  width:315px;
+  height:40px;
+  background: linear-gradient(45deg, #10abff, white);
+  padding: 15px;
+  border-radius: 9999em;
+  font:bold 30px Arial;
+  :not(span) {
+    position: relative;
+    display: inherit;
+    border-radius: inherit;
+    margin: 5;
+    border: none;
+    outline: none;
+    padding: 0 .325em;
+    z-index: 1;   
